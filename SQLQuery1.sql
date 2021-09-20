@@ -7,7 +7,7 @@ SELECT *
 FROM portfolio..vaccination
 ORDER BY location
 
--- we are using dataset
+-- We are using dataset
 SELECT location, date, population, new_cases, new_deaths, total_cases, total_deaths
 FROM portfolio..covid_death
 ORDER BY location
@@ -57,7 +57,7 @@ FROM portfolio..covid_death
 WHERE continent is not null
 GROUP BY continent
 
--- contintentd Highest deaths and population 
+-- Contintentd Highest deaths and population 
 SELECT continent, SUM(DISTINCT(Population)) as Population, SUM(CAST (new_cases as int)) as Total_cases , SUM(CAST (new_deaths as int))  as Total_deaths
 FROM portfolio..covid_death
 WHERE continent is not null
@@ -84,7 +84,7 @@ WHERE continent is not null
 GROUP BY date
 --ORDER BY Death_Ratio_per_cases DESC
 
--- Join tables Total Vaccination 
+-- Joining tables Total Vaccination 
 SELECT * --a.continent, a.location, a.date,a.population,b.total_vaccinations,b.people_fully_vaccinated
 FROM portfolio..covid_death dea 
 join portfolio..vaccination vac 
@@ -102,7 +102,7 @@ ON dea.location = vac.location and dea.date=vac.date
 WHERE dea.continent is not null
 ORDER BY dea.location,dea.date
 
--- create CTE table
+-- Create CTE table
 
 With pop_vac(Continent,location,date,population,new_vaccinations,people_vaccinating)
 as
