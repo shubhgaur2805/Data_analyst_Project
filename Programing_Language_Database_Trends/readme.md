@@ -5,6 +5,10 @@
 ### Dataset Format : *.CSV File
 ### Data Visualization using : IBM Cognos 
 
+### Total Entries in Dataset:
+M1_survey_data : 11,504
+m5_survey_data_technologies_normalised : 74,532
+
 ## Question Answered:
 - [x] Perform Analysis on Language and database trends 
 - [x] Which Programing Language highest userbase.
