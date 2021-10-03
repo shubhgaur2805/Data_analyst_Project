@@ -6,8 +6,12 @@
 ### Data Visualization using : IBM Cognos 
 
 ### Total Entries in Dataset:
-M1_survey_data : 11,504
-m5_survey_data_technologies_normalised : 74,532
+#### Before Cleaning
+- m1_survey_data : 11,504
+- m5_survey_data_technologies_normalised : 74,532
+#### After Cleaning
+- Survey_Data : 8045
+- Lang_Database : 11985
 
 ## Question Answered:
 - [x] Perform Analysis on Language and database trends 
